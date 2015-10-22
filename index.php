@@ -1,8 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
+<html class="no-js" lang="pt">
     <head>
 
     	<!-- meta tags -->
@@ -15,7 +12,7 @@
         <!-- end meta tags -->
         
         <!-- favicon -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="apple-touch-icon" href="app/images/apple-touch-icon.png">
         <!-- end favicon -->
 
 
@@ -36,7 +33,6 @@
     <![endif]-->
 		
 		
-
 		<!-- scripts -->
 		<script src="app/scripts/vendor/jquery.min.js"></script>
         <script src="app/scripts/vendor/bootstrap.min.js"></script>
