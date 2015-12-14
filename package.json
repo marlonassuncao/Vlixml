@@ -1,10 +1,15 @@
 {
   "name": "Vlixml",
   "author": "Marlon Assunção",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/marlonassuncao/Vlixml.git"
+  },
   "devDependencies": {
+    "browser-sync": "^2.10.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
-    "gulp-livereload": "^3.8.0",
+    "gulp-connect-php": "0.0.7",
     "gulp-minify-css": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
