@@ -1,8 +1,11 @@
-// Gulpfile
+/*
+    Gulp tasks.
+*/
 
 'use strict';
 
 // load plugins
+
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     path = require('path'),
@@ -14,24 +17,23 @@ var gulp = require('gulp'),
     php = require('gulp-connect-php');
 
 // default
-gulp.task('default', ['server']);
+gulp.task('default', ['serve']);
 
-// server
-gulp.task('server', ['sass'], function() {
+// serve
+gulp.task('serve', ['sass'], function() {
 
-	// php server
-    php.server({}, function() {
+    php.server({
+    	keepalive: false
+    }, function() {
         browserSync({
             proxy: '127.0.0.1:8000'
         });
     });
 
-    // html server
     // browserSync.init({
     //     server: "./"
     // });
-	
-	// watch files
+
     gulp.watch('./app/styles/main.scss', ['sass']);
     gulp.watch('./app/styles/main.min.css', ['sass']);
     gulp.watch('./app/scripts/main.min.js').on('change', browserSync.reload);
