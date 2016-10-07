@@ -1,11 +1,7 @@
-/*
-    Gulp tasks.
-*/
-
+// gulp
 'use strict';
 
 // load plugins
-
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     path = require('path'),
@@ -23,7 +19,7 @@ gulp.task('default', ['serve']);
 gulp.task('serve', ['sass'], function() {
 
     php.server({
-    	keepalive: false
+        keepalive: false
     }, function() {
         browserSync({
             proxy: '127.0.0.1:8000'
